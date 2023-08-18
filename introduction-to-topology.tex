@@ -18,319 +18,555 @@
 \institute{Eyes, Japan}
 \date{\today}
 \logo{
-\includegraphics[width=3cm]{eyes-japan-logo.png}
+  \includegraphics[width=3cm]{eyes-japan-logo.png}
 }
 
 \begin{document}
 
 % Title page frame
 \begin{frame}
-    \titlepage
+  \titlepage
 \end{frame}
 
 % Outline frame
 \begin{frame}{Outline}
-    \tableofcontents
+  \tableofcontents
 \end{frame}
 
 % Current section
 \AtBeginSection[ ]
 {
-\begin{frame}{Outline}
+  \begin{frame}{Outline}
     \tableofcontents[currentsection]
-\end{frame}
+  \end{frame}
 }
 
 % Presentation structure
 \section{Euler's theorem}
 
 \begin{frame}{Euler's theorem}
-\begin{columns}
-% Column 1
-\begin{column}{0.5\textwidth}
-  \begin{block}{}
-    \begin{itemize}
-    \item v: The number of vertices.
-    \item e: The number of edges.
-    \item f: The number of faces.
-    \end{itemize}
-  \end{block}
-  \begin{block}{}
-    $v - e + f = 2$
-  \end{block}
-  \begin{block}{}
-    \begin{itemize}
-    \item convex
-    \item not convex
-    \end{itemize}
-  \end{block}
-\end{column}
-% Column 2
-\begin{column}{0.5\textwidth}
-    \begin{figure}
-    \centering
+  \begin{columns}
+    % Column 1
+    \begin{column}{0.5\textwidth}
+      \begin{block}{}
+        \begin{itemize}
+        \item v: The number of vertices.
+        \item e: The number of edges.
+        \item f: The number of faces.
+        \end{itemize}
+      \end{block}
+      \begin{block}{}
+        $v - e + f = 2$
+      \end{block}
+      \begin{block}{}
+        \begin{itemize}
+        \item convex
+        \item not convex
+        \end{itemize}
+      \end{block}
+    \end{column}
+    % Column 2
+    \begin{column}{0.5\textwidth}
+      \begin{figure}
+        \centering
         \includegraphics[width=0.7\textwidth]{figure_1_1.png}
         \caption{Polyhedra}
-    \end{figure}
-\end{column}
-\end{columns}
+      \end{figure}
+    \end{column}
+  \end{columns}
 \end{frame}
 
 \begin{frame}{Euler's theorem}
-\begin{columns}
-% Column 1
-\begin{column}{0.5\textwidth}
-  \begin{block}{}
-    \begin{itemize}
-    \item A polyhedron whose surface consists of two distinct pieces.
-    \item Its surface is not connected.
-    \item Each of the pieces of surface contributes 2 to $v - e + f$.
-    \end{itemize}
-  \end{block}
-  \begin{block}{}
-    $v - e + f = 4$
-  \end{block}
-\end{column}
-% Column 2
-\begin{column}{0.5\textwidth}
-    \begin{figure}
-    \centering
+  \begin{columns}
+    % Column 1
+    \begin{column}{0.5\textwidth}
+      \begin{block}{}
+        \begin{itemize}
+        \item A polyhedron whose surface consists of two distinct pieces.
+        \item Its surface is not connected.
+        \item Each of the pieces of surface contributes 2 to $v - e + f$.
+        \end{itemize}
+      \end{block}
+      \begin{block}{}
+        $v - e + f = 4$
+      \end{block}
+    \end{column}
+    % Column 2
+    \begin{column}{0.5\textwidth}
+      \begin{figure}
+        \centering
         \includegraphics[width=0.7\textwidth]{figure_1_2.png}
         \caption{A cube with a small cube removed from its interior}
-    \end{figure}
-\end{column}
-\end{columns}
+      \end{figure}
+    \end{column}
+  \end{columns}
 \end{frame}
 
 \begin{frame}{Euler's theorem}
-\begin{columns}
-% Column 1
-\begin{column}{0.5\textwidth}
-  \begin{block}{}
-    \begin{itemize}
-    \item A polyhedron whose surface consists of all one piece.
-    \item Can find a loop on the surface which does not separate it into two distinct parts.
-    \item Imagine: Cutting round the loop with a pair of scissors, then the surface does not fall into two pieces.
-    \end{itemize}
-  \end{block}
-  \begin{block}{}
-    $v - e + f = 0$
-  \end{block}
-\end{column}
-% Column 2
-\begin{column}{0.5\textwidth}
-    \begin{figure}
-    \centering
+  \begin{columns}
+    % Column 1
+    \begin{column}{0.5\textwidth}
+      \begin{block}{}
+        \begin{itemize}
+        \item A polyhedron whose surface consists of all one piece.
+        \item Can find a loop on the surface which does not separate it into two distinct parts.
+        \item Imagine: Cutting round the loop with a pair of scissors, then the surface does not fall into two pieces.
+        \end{itemize}
+      \end{block}
+      \begin{block}{}
+        $v - e + f = 0$
+      \end{block}
+    \end{column}
+    % Column 2
+    \begin{column}{0.5\textwidth}
+      \begin{figure}
+        \centering
         \includegraphics[width=0.7\textwidth]{figure_1_3.png}
         \caption{A prism with a hole straight through the centre}
-    \end{figure}
-\end{column}
-\end{columns}
+      \end{figure}
+    \end{column}
+  \end{columns}
 \end{frame}
 
 \begin{frame}{Euler's theorem}
-\begin{columns}
-% Column 1
-\begin{column}{0.4\textwidth}
-  \begin{block}{}
-    \begin{itemize}
-    \item The surfaces of solids(except, that is, when we mentioned convexity).
-    \item Use the word polyhedron for such a surface, rather than for the solid which it bounds.
-    \item A \textsl{polyhedron} is a finite collection of plane polygons which fit together nicely in the rigth sense:
-    \end{itemize}
-  \end{block}
-\end{column}
-% Column 2
-\begin{column}{0.6\textwidth}
-  \begin{block}{}
-    \begin{itemize}
-    \item If two polygons meet they do so in a common edge, and each edge of a polygon lies in precisely one other polygon.
-    \item In addition, we ask that if we consider the polygons which contain a particular vertex, then we can label them $Q_1$, $Q_2$,....,$Q_k$ in such a way that $Q_i$ has an edge in common with $Q_{i+1}$ for $1 <= i < k$, and $Q_k$ has an edge in common with $Q_1$.
-    \item In other words, the polygons fit together to form a piece of surface around the given vertex (The number \textsl{k} may vary from one vertex to another).
-    \end{itemize}
-  \end{block}
-\end{column}
-\end{columns}
+  \begin{columns}
+    % Column 1
+    \begin{column}{0.4\textwidth}
+      \begin{block}{}
+        \begin{itemize}
+        \item The surfaces of solids (except, that is, when we mentioned convexity).
+        \item Use the word polyhedron for such a surface, rather than for the solid which it bounds.
+        \item A \textsl{polyhedron} is a finite collection of plane polygons which fit together nicely in the rigth sense:
+        \end{itemize}
+      \end{block}
+    \end{column}
+    % Column 2
+    \begin{column}{0.6\textwidth}
+      \begin{block}{}
+        \begin{itemize}
+        \item If two polygons meet they do so in a common edge, and each edge of a polygon lies in precisely one other polygon.
+        \item In addition, we ask that if we consider the polygons which contain a particular vertex, then we can label them $Q_1$, $Q_2$,....,$Q_k$ in such a way that $Q_i$ has an edge in common with $Q_{i+1}$ for $1 \leq i < k$, and $Q_k$ has an edge in common with $Q_1$.
+        \item In other words, the polygons fit together to form a piece of surface around the given vertex (The number \textsl{k} may vary from one vertex to another).
+        \end{itemize}
+      \end{block}
+    \end{column}
+  \end{columns}
 \end{frame}
 
 \begin{frame}{Euler's theorem}
-% Theorem environment
-\begin{theorem}[Euler's theorem.]
-  Let P be a polyhedron which satisfies:
-  \begin{enumerate}[label={(\alph*)}]
+  % Theorem environment
+  \begin{theorem}[(1.1) Euler's theorem.]
+    Let P be a polyhedron which satisfies:
+    \begin{enumerate}[label={(\alph*)}]
     \item Any two vertices of P can be connected by a chain of edges.
     \item Any loop on P which is made up of straight line segments (not necessary edges) separates P into two pieces.
-  \end{enumerate}
-  Then v - e + f = 2 for P.
-\end{theorem}
+    \end{enumerate}
+    Then v - e + f = 2 for P.
+  \end{theorem}
 \end{frame}
 
 \begin{frame}{Euler's theorem}
-\begin{columns}
-% Column 1
-\begin{column}{0.5\textwidth}
-  \begin{definition}[Graph]
-    A connected set of vertices and edges of \textsl{P}.
-    \begin{itemize}
-    \item Connected simply means that any two vertices can be joined by a chain of edges in the graph.
-    \item We use the word graph for any finite connected set of line segments in 3-space which fit together nicely as the right figure.
-    \item If two segments intersect they are required to do so in a common vertex.
-    \end{itemize}
-  \end{definition}
-\end{column}
-% Column 2
-\begin{column}{0.5\textwidth}
-    \begin{figure}
-    \centering
+  \begin{columns}
+    % Column 1
+    \begin{column}{0.5\textwidth}
+      \begin{definition}[Graph]
+        A connected set of vertices and edges of \textsl{P}.
+        \begin{itemize}
+        \item Connected simply means that any two vertices can be joined by a chain of edges in the graph.
+        \item We use the word graph for any finite connected set of line segments in 3-space which fit together nicely as the right figure.
+        \item If two segments intersect they are required to do so in a common vertex.
+        \end{itemize}
+      \end{definition}
+    \end{column}
+    % Column 2
+    \begin{column}{0.5\textwidth}
+      \begin{figure}
+        \centering
         \includegraphics[width=0.7\textwidth]{figure_1_4_b.png}
         \caption{Graph}
-    \end{figure}
-\end{column}
-\end{columns}
+      \end{figure}
+    \end{column}
+  \end{columns}
 \end{frame}
 
 \begin{frame}{Euler's theorem}
-\begin{columns}
-% Column 1
-\begin{column}{0.5\textwidth}
-  \begin{definition}[Tree]
-    A graph which does not contain any loops.
-    \begin{itemize}
-    \item For a tree, the number of vertices minus the number of edges is equal to 1.
-    \item If the tree is denoted by \textsl{T}, we shall write this as $v(T) - e(T) = 1$.
-    \end{itemize}
-  \end{definition}
-\end{column}
-% Column 2
-\begin{column}{0.5\textwidth}
-    \begin{figure}
-    \centering
+  \begin{columns}
+    % Column 1
+    \begin{column}{0.5\textwidth}
+      \begin{definition}[Tree]
+        A graph which does not contain any loops.
+        \begin{itemize}
+        \item For a tree, the number of vertices minus the number of edges is equal to 1.
+        \item If the tree is denoted by \textsl{T}, we shall write this as $v(T) - e(T) = 1$.
+        \end{itemize}
+      \end{definition}
+    \end{column}
+    % Column 2
+    \begin{column}{0.5\textwidth}
+      \begin{figure}
+        \centering
         \includegraphics[width=0.7\textwidth]{figure_1_4_a.png}
         \caption{Tree}
-    \end{figure}
-\end{column}
-\end{columns}
+      \end{figure}
+    \end{column}
+  \end{columns}
 \end{frame}
 
 \begin{frame}{Euler's theorem}
-\begin{columns}
-% Column 1
-\begin{column}{0.5\textwidth}
-  \begin{proof}
-    \begin{itemize}
-    \item The set of all vertices and edges of \textsl{P} is a graph.
-    \item In any graph find a subgraph which is a tree and which contains all the vertices of the original.
-    \item Choose a tree \textsl{T} which consists of some of the edges and all of the vertices of \textsl{P}.
-    \end{itemize}
-  \end{proof}
-\end{column}
-% Column 2
-\begin{column}{0.5\textwidth}
-    \begin{figure}
-    \centering
+  \begin{columns}
+    % Column 1
+    \begin{column}{0.5\textwidth}
+      \begin{proof}
+        \begin{itemize}
+        \item The set of all vertices and edges of \textsl{P} is a graph.
+        \item In any graph find a subgraph which is a tree and which contains all the vertices of the original.
+        \item Choose a tree \textsl{T} which consists of some of the edges and all of the vertices of \textsl{P}.
+        \end{itemize}
+      \end{proof}
+    \end{column}
+    % Column 2
+    \begin{column}{0.5\textwidth}
+      \begin{figure}
+        \centering
         \includegraphics[width=0.7\textwidth]{figure_1_5_a.png}
         \caption{Subgraph-Tree}
-    \end{figure}
-\end{column}
-\end{columns}
+      \end{figure}
+    \end{column}
+  \end{columns}
 \end{frame}
 
 \begin{frame}{Euler's theorem}
-\begin{columns}
-% Column 1
-\begin{column}{0.6\textwidth}
-  \begin{proof}
-    Form a sort of dual to \textsl{T}. This dual is a grap $\Gamma$ defined as follows:
-    \begin{itemize}
-    \item For each face \textsl{A} of \textsl{P} we give $\Gamma$ a vertex $\acute{A}$.
-    \item Two vertices $\acute{A}$ and $\acute{B}$ of $\Gamma$ are joined by an edge if and only if the corresponding faces \textsl{A} and \textsl{B} of \textsl{P} are adjacent with intersection an edge that is not in \textsl{T}.
-    \item The vertex $\acute{A}$ corresponding to an interior point of \textsl{A}.
-    \item We allow the edges of $\Gamma$ to be bent.
-    \end{itemize}
-  \end{proof}
-\end{column}
-% Column 2
-\begin{column}{0.4\textwidth}
-    \begin{figure}
-    \centering
+  \begin{columns}
+    % Column 1
+    \begin{column}{0.6\textwidth}
+      \begin{proof}
+        Form a sort of dual to \textsl{T}. This dual is a grap $\Gamma$ defined as follows:
+        \begin{itemize}
+        \item For each face \textsl{A} of \textsl{P} we give $\Gamma$ a vertex $\hat A$.
+        \item Two vertices $\hat A$ and $\hat B$ of $\Gamma$ are joined by an edge if and only if the corresponding faces \textsl{A} and \textsl{B} of \textsl{P} are adjacent with intersection an edge that is not in \textsl{T}.
+        \item The vertex $\hat A$ corresponding to an interior point of \textsl{A}.
+        \item We allow the edges of $\Gamma$ to be bent.
+        \end{itemize}
+      \end{proof}
+    \end{column}
+    % Column 2
+    \begin{column}{0.4\textwidth}
+      \begin{figure}
+        \centering
         \includegraphics[width=0.7\textwidth]{figure_1_5_b.png}
         \caption{Associated tree $\Gamma$}
-    \end{figure}
-\end{column}
-\end{columns}
+      \end{figure}
+    \end{column}
+  \end{columns}
 \end{frame}
 
 \begin{frame}{Euler's theorem}
-\begin{columns}
-% Column 1
-\begin{column}{0.6\textwidth}
-  \begin{proof}
-    Dual $\Gamma$ is connected and is therefore a graph.
-    \begin{itemize}
-    \item Intuitively, if two vertices of $\Gamma$ cannot be connected by a chain of edges of $\Gamma$, then they must be separated from one another by a loop of \textsl{T}.
-    \item Since \textsl{T} does not contain any loops we deduce that $\Gamma$ must be connected.
-    \end{itemize}
-  \end{proof}
-\end{column}
-% Column 2
-\begin{column}{0.4\textwidth}
-    \begin{figure}
-    \centering
+  \begin{columns}
+    % Column 1
+    \begin{column}{0.6\textwidth}
+      \begin{proof}
+        Dual $\Gamma$ is connected and is therefore a graph.
+        \begin{itemize}
+        \item Intuitively, if two vertices of $\Gamma$ cannot be connected by a chain of edges of $\Gamma$, then they must be separated from one another by a loop of \textsl{T}.
+        \item Since \textsl{T} does not contain any loops we deduce that $\Gamma$ must be connected.
+        \end{itemize}
+      \end{proof}
+    \end{column}
+    % Column 2
+    \begin{column}{0.4\textwidth}
+      \begin{figure}
+        \centering
         \includegraphics[width=0.7\textwidth]{figure_1_5_c.png}
         \caption{Associated tree $\Gamma$}
-    \end{figure}
-\end{column}
-\end{columns}
+      \end{figure}
+    \end{column}
+  \end{columns}
 \end{frame}
 
 \begin{frame}{Euler's theorem}
-\begin{columns}
-% Column 1
-\begin{column}{0.6\textwidth}
-  \begin{proof}
-    In fact $\Gamma$ is a tree.
-    \begin{itemize}
-    \item For if there were a loop in $\Gamma$ it would separate \textsl{P} into two distinct pieces by hypothesis (b), and each if these pieces must contain at least one vertex of $\Gamma$.
-    \item Any attempt to connect two vertices of \textsl{T} which lie in different pieces by a chain of edges results in a chain which  meets this separating loop, and therefore in a chain which cannot lie entirely in \textsl{T}.
-    \item This contradicts the fact that \textsl{T} is connected. Therefore $\Gamma$ is a tree.
-    \end{itemize}
-  \end{proof}
-\end{column}
-% Column 2
-\begin{column}{0.4\textwidth}
-    \begin{figure}
-    \centering
+  \begin{columns}
+    % Column 1
+    \begin{column}{0.6\textwidth}
+      \begin{proof}
+        In fact $\Gamma$ is a tree.
+        \begin{itemize}
+        \item For if there were a loop in $\Gamma$ it would separate \textsl{P} into two distinct pieces by hypothesis (b), and each of these pieces must contain at least one vertex of $\Gamma$.
+        \item Any attempt to connect two vertices of \textsl{T} which lie in different pieces by a chain of edges results in a chain which  meets this separating loop, and therefore in a chain which cannot lie entirely in \textsl{T}.
+        \item This contradicts the fact that \textsl{T} is connected. Therefore $\Gamma$ is a tree.
+        \end{itemize}
+      \end{proof}
+    \end{column}
+    % Column 2
+    \begin{column}{0.4\textwidth}
+      \begin{figure}
+        \centering
         \includegraphics[width=0.7\textwidth]{figure_1_5_c.png}
         \caption{Associated tree $\Gamma$}
-    \end{figure}
-\end{column}
-\end{columns}
+      \end{figure}
+    \end{column}
+  \end{columns}
 \end{frame}
 
 \begin{frame}{Euler's theorem}
-\begin{columns}
-% Column 1
-\begin{column}{0.6\textwidth}
-  \begin{proof}
-    \begin{itemize}
-    \item Since $v(T) - e(T) = 1$ and $v(\Gamma) - e(\Gamma) = 1$.
-    \item Therefore $v(T) - [e(T) + e(\Gamma)] + v(\Gamma) = 2$.
-    \item By construction $v(T) = v$, $e(T) + e(\Gamma) = e$, $v(\Gamma) = f$.
-    \end{itemize}
-  \end{proof}
-\end{column}
-% Column 2
-\begin{column}{0.4\textwidth}
-    \begin{figure}
-    \centering
+  \begin{columns}
+    % Column 1
+    \begin{column}{0.6\textwidth}
+      \begin{proof}
+        \begin{itemize}
+        \item Since $v(T) - e(T) = 1$ and $v(\Gamma) - e(\Gamma) = 1$.
+        \item Therefore $v(T) - [e(T) + e(\Gamma)] + v(\Gamma) = 2$.
+        \item By construction $v(T) = v$, $e(T) + e(\Gamma) = e$, $v(\Gamma) = f$.
+        \end{itemize}
+      \end{proof}
+    \end{column}
+    % Column 2
+    \begin{column}{0.4\textwidth}
+      \begin{figure}
+        \centering
         \includegraphics[width=0.7\textwidth]{figure_1_5_c.png}
         \caption{Associated tree $\Gamma$}
-    \end{figure}
-\end{column}
-\end{columns}
+      \end{figure}
+    \end{column}
+  \end{columns}
 \end{frame}
 
 \section{Topological equivalence}
+
+\begin{frame}{Topological equivalence}
+  \begin{columns}
+    \begin{column}{0.6\textwidth}
+      \begin{block}{}
+        The proof contains more information:
+        \begin{itemize}
+        \item It actually tells us that \textsl{P} is made up of two discs which are identified along their boundaries.
+        \item Thicken each of \textsl{T} and $\Gamma$ a little on \textsl{P} to obtain two disjoint discs.
+        \item Thickening a tree always gives a disc, thickening a graph with loops will give a space with holes in it.
+        \item Enlarge these discs little by little until their boundaries coincide.
+        \item The polyhedron \textsl{P} is now made up of two discs which have a common boundary.
+        \end{itemize}
+      \end{block}
+    \end{column}
+    % Column 2
+    \begin{column}{0.4\textwidth}
+      \begin{figure}
+        \centering
+        \includegraphics[width=0.7\textwidth]{figure_1_6.png}
+        \caption{\textsl{T} and $\Gamma$ thickened on \textsl{P}}
+      \end{figure}
+    \end{column}
+  \end{columns}
+\end{frame}
+
+\begin{frame}{Topological equivalence}
+  \begin{columns}
+    \begin{column}{0.6\textwidth}
+      \begin{block}{}
+        \begin{itemize}
+        \item Granted these discs may have a rather odd shape, but they can be deformed into ordinary, round flat discs.
+        \end{itemize}
+      \end{block}
+    \end{column}
+    % Column 2
+    \begin{column}{0.4\textwidth}
+      \begin{figure}
+        \centering
+        \includegraphics[width=0.7\textwidth]{figure_1_7.png}
+        \caption{}
+      \end{figure}
+    \end{column}
+  \end{columns}
+\end{frame}
+
+\begin{frame}{Topological equivalence}
+  \begin{columns}
+    \begin{column}{0.6\textwidth}
+      \begin{block}{}
+        \begin{itemize}
+        \item Now remember that the sphere consists of two discs, the north and south hemispheres, sewn along their common boundary the equator.
+        \item In other words, the hypotheses of Euler's theorem tell us that \textsl{P} looks in some sense like a rather deformed sphere.
+        \end{itemize}
+      \end{block}
+    \end{column}
+    % Column 2
+    \begin{column}{0.4\textwidth}
+      \begin{figure}
+        \centering
+        \includegraphics[width=0.7\textwidth]{figure_1_7_b.png}
+        \caption{identify boundaries}
+      \end{figure}
+    \end{column}
+  \end{columns}
+\end{frame}
+
+\begin{frame}{Topological equivalence}
+  \begin{columns}
+    \begin{column}{0.6\textwidth}
+      \begin{block}{}
+        For a specific polyhedron it may be very easy to set up a decent correspondence bwtween its points and those of the sphere.
+        \begin{itemize}
+        \item For example, in the case of the regular tetrahedron \textsl{T} we can use radial projection from the centre of gravity $\hat T$ of \textsl{T} to project \textsl{T} onto a sphere with centre $\hat T$.
+        \end{itemize}
+      \end{block}
+    \end{column}
+    % Column 2
+    \begin{column}{0.4\textwidth}
+      \begin{figure}
+        \centering
+        \includegraphics[width=0.7\textwidth]{figure_1_8_a.png}
+        \caption{Radial projection $\pi$}
+      \end{figure}
+    \end{column}
+  \end{columns}
+\end{frame}
+
+\begin{frame}{Topological equivalence}
+  \begin{columns}
+    \begin{column}{0.6\textwidth}
+      \begin{block}{}
+        \begin{itemize}
+        \item The faces of \textsl{T} project to curvilinear triangles on the sphere as shown on the right fig.
+        \end{itemize}
+      \end{block}
+    \end{column}
+    % Column 2
+    \begin{column}{0.4\textwidth}
+      \begin{figure}
+        \centering
+        \includegraphics[width=0.7\textwidth]{figure_1_8_b.png}
+        \caption{Radial projection $\pi$}
+      \end{figure}
+    \end{column}
+  \end{columns}
+\end{frame}
+
+\begin{frame}{Topological equivalence}
+  \begin{columns}
+    % Column 1
+    \begin{column}{0.6\textwidth}
+      \begin{block}{}
+        \begin{itemize}
+        \item The polyhedron that is not convex and does not lend itself to the above argument.
+        \item However, if we think of it as being made of rubber then we can easily imagine how to deform it into an ordinary round sphere.
+        \item During the deformation we stretch and bend the polyhedron at will, \textsl{but we never identify distinct points and we never tear it}.
+        \end{itemize}
+      \end{block}
+    \end{column}
+    % Column 2
+    \begin{column}{0.4\textwidth}
+      \begin{figure}
+        \centering
+        \includegraphics[width=0.7\textwidth]{figure_1_8_c.png}
+        \caption{Polyhedron that is not convex}
+      \end{figure}
+    \end{column}
+  \end{columns}
+\end{frame}
+
+\begin{frame}{Topological equivalence}
+  \begin{columns}
+    % Column 1
+    \begin{column}{1.0\textwidth}
+      \begin{block}{}
+        \begin{itemize}
+        \item The resulting correspondence between the points of the given polyhedron and the points of the sphere is an example of \textsl{topological equivalence} or \textsl{homeomorphism}.
+        \item In formal terms it is a one-one and onto continuous function with continuous inverse.
+        \end{itemize}
+      \end{block}
+    \end{column}
+  \end{columns}
+\end{frame}
+
+\begin{frame}{Topological equivalence}
+  \begin{block}{}
+    To help make things a little more concrete: Here are four spaces which are homeomorphic.
+  \end{block}
+  \begin{columns}
+    \begin{column}{0.4\textwidth}
+      \begin{figure}
+        \centering
+        \includegraphics[width=0.7\textwidth]{figure_1_9_a.png}
+        \caption{(a) Surface of cylinder finite height, excluding the two circles at the ends}
+      \end{figure}
+    \end{column}
+    % Column 2
+    \begin{column}{0.6\textwidth}
+      \begin{figure}
+        \centering
+        \includegraphics[width=0.7\textwidth]{figure_1_9_d.png}
+        \caption{(b) Sphere with the points at the north and south poles removed}
+      \end{figure}
+    \end{column}
+  \end{columns}
+\end{frame}
+
+\begin{frame}{Topological equivalence}
+  \begin{block}{}
+    To help make things a little more concrete: Here are four spaces which are homeomorphic.
+  \end{block}
+  \begin{columns}
+    \begin{column}{0.5\textwidth}
+      \begin{figure}
+        \centering
+        \includegraphics[width=0.7\textwidth]{figure_1_9_b.png}
+        \caption{(c) One-sheeted hyperboloid given by the equation $x^2 + y^2 - z^2 = 1$}
+      \end{figure}
+    \end{column}
+    % Column 2
+    \begin{column}{0.5\textwidth}
+      \begin{figure}
+        \centering
+        \includegraphics[width=0.7\textwidth]{figure_1_9_c.png}
+        \caption{(d) Open annulus in the complex plane specified by $1 < |z| < 3$}
+      \end{figure}
+    \end{column}
+  \end{columns}
+\end{frame}
+
+\begin{frame}{Topological equivalence}
+  \begin{block}{}
+    We propose to give a specific homeomorphism (i.e., a continuous, one-one, and onto function which has continuous inverse) from space (c) to space (d).
+  \end{block}
+  \begin{columns}
+    \begin{column}{0.5\textwidth}
+      \begin{figure}
+        \centering
+        \includegraphics[width=0.7\textwidth]{figure_1_9_b.png}
+        \caption{(c) $x^2 + y^2 - z^2 = 1$}
+      \end{figure}
+    \end{column}
+    % Column 2
+    \begin{column}{0.5\textwidth}
+      \begin{figure}
+        \centering
+        \includegraphics[width=0.7\textwidth]{figure_1_9_c.png}
+        \caption{(d) $1 < |z| < 3$}
+      \end{figure}
+    \end{column}
+  \end{columns}
+\end{frame}
+
+\begin{frame}{Topological equivalence}
+  \begin{block}{}
+    \begin{itemize}
+    \item A way of defining a homeomorphism from the polyhedron \textsl{P} to the sphere.
+    \item It is possible to produce an argument in the opposite direction and show that if \textsl{P} is topologically equivalent to the sphere then \textsl{P} satisfies hypotheses (a) and (b) of Euler's theorem, and therefore Euler's theorem holds for \textsl{P}.
+    \item So if \textsl{P} and \textsl{Q} are polyhedra which are both homeomorphic to the sphere, and if we call $v - e + f$ the \textsl{Euler number} of a polyhedron, then we know from the above discussion that \textsl{P} and \textsl{Q} have the same Euler number, namely 2.
+    \end{itemize}
+  \end{block}
+\end{frame}
+
+\begin{frame}{Topological equivalence}
+  % Theorem environment
+  \begin{theorem}[(1.2) Topologically equivalent polyhedra have the same Euler number.]
+    Let P be a polyhedron which satisfies:
+    \begin{enumerate}[label={(\alph*)}]
+    \item Any two vertices of P can be connected by a chain of edges.
+    \item Any loop on P which is made up of straight line segments (not necessary edges) separates P into two pieces.
+    \end{enumerate}
+    Then v - e + f = 2 for P.
+  \end{theorem}
+\end{frame}
+
 \section{Surfaces}
 \section{Abstract spaces}
 \section{A classification theorem}
