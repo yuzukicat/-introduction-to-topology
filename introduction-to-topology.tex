@@ -558,16 +558,226 @@
 \begin{frame}{Topological equivalence}
   % Theorem environment
   \begin{theorem}[(1.2) Topologically equivalent polyhedra have the same Euler number.]
-    Let P be a polyhedron which satisfies:
-    \begin{enumerate}[label={(\alph*)}]
-    \item Any two vertices of P can be connected by a chain of edges.
-    \item Any loop on P which is made up of straight line segments (not necessary edges) separates P into two pieces.
-    \end{enumerate}
-    Then v - e + f = 2 for P.
   \end{theorem}
 \end{frame}
 
 \section{Surfaces}
+
+\begin{frame}{Surfaces}
+  \begin{block}{}
+    Being geometers at heart, we are more interested in bounded configurations which occure natually in euclidean space. For example, the unit circle, the unit disc in the plane, surfaces such as:
+  \end{block}
+  \begin{columns}
+    \begin{column}{0.5\textwidth}
+      \begin{figure}
+        \centering
+        \includegraphics[width=0.7\textwidth]{figure_1_10_a.png}
+        \caption{(a) Sphere}
+      \end{figure}
+    \end{column}
+    % Column 2
+    \begin{column}{0.5\textwidth}
+      \begin{figure}
+        \centering
+        \includegraphics[width=0.7\textwidth]{figure_1_10_b.png}
+        \caption{(b) Torus}
+      \end{figure}
+    \end{column}
+  \end{columns}
+\end{frame}
+
+\begin{frame}{Surfaces}
+  \begin{block}{}
+    All of which live in three-dimensional space.
+  \end{block}
+  \begin{columns}
+    \begin{column}{0.5\textwidth}
+      \begin{figure}
+        \centering
+        \includegraphics[width=0.7\textwidth]{figure_1_10_c.png}
+        \caption{(c) Mobius strip}
+      \end{figure}
+    \end{column}
+    % Column 2
+    \begin{column}{0.5\textwidth}
+      \begin{figure}
+        \centering
+        \includegraphics[width=0.7\textwidth]{figure_1_10_d.png}
+        \caption{(d) Cylinder}
+      \end{figure}
+    \end{column}
+  \end{columns}
+\end{frame}
+
+\begin{frame}{Surfaces}
+  \begin{block}{}
+    Klein bottle is difficult to imagine because in any attempt to represent it in three dimensions the Klein bottle must cross itself. In our drawing the surface cuts itself in a small circle.
+  \end{block}
+  \begin{columns}
+    \begin{column}{0.5\textwidth}
+      \begin{figure}
+        \centering
+        \includegraphics[width=0.7\textwidth]{figure_1_10_e.png}
+        \caption{(e) Klein bottle}
+      \end{figure}
+    \end{column}
+    % Column 2
+    \begin{column}{0.5\textwidth}
+      \begin{figure}
+        \centering
+        \includegraphics[width=0.7\textwidth]{figure_1_10_f.png}
+        \caption{(f) Punctured double torus}
+      \end{figure}
+    \end{column}
+  \end{columns}
+\end{frame}
+
+\begin{frame}{Surfaces}
+  \begin{block}{}
+    To build a Klein bottle, the first half of the construction, that is as far as cylinder, is the same.
+  \end{block}
+  \begin{figure}
+    \centering
+    \includegraphics[width=0.7\textwidth]{figure_1_11.png}
+    \caption{}
+  \end{figure}
+\end{frame}
+
+\begin{frame}{Surfaces}
+  \begin{block}{}
+    But then the ends of the cylinder are identified in the opposite direction. In order to do this, the cylinder has to be bent around and one end pushed through the side as in the Fig.
+  \end{block}
+  \begin{figure}
+    \centering
+    \includegraphics[width=0.7\textwidth]{figure_1_12.png}
+    \caption{}
+  \end{figure}
+\end{frame}
+
+\begin{frame}{Surfaces}
+  \begin{block}{}
+    The Klein bottle (\textsl{K}) can be represented in four-dimensional space without any self intersections.
+    \begin{itemize}
+    \item Imagine an extra dimension perpendicular to the paper, remembering all the time that the paper represents ordinary three-dimensional space.
+    \item Near the intersection circle of \textsl{K} we have two pipes, one of which cuts through the other.
+    \item Lift one pipe a little clear of the other into the fourth dimension.
+    \end{itemize}
+  \end{block}
+  \begin{figure}
+    \centering
+    \includegraphics[width=0.7\textwidth]{figure_1_13.png}
+    \caption{}
+  \end{figure}
+\end{frame}
+
+\begin{frame}{Surfaces}
+  \begin{block}{}
+    Our way of introducing surfaces by representing them in euclidean space is not such a good idea as it might appear at first sight.
+  \end{block}
+\end{frame}
+
+\begin{frame}{Surfaces}
+  \begin{block}{}
+    Three copies of the Mobius strip \textsl{M}. (a) and (b) are homeomorphic is no surprise, one only has to take a rubber version of (a) and stretch it into the (b)
+  \end{block}
+  \begin{columns}
+    \begin{column}{0.5\textwidth}
+      \begin{figure}
+        \centering
+        \includegraphics[width=0.7\textwidth]{figure_1_14_a.png}
+        \caption{(a)}
+      \end{figure}
+    \end{column}
+    % Column 2
+    \begin{column}{0.5\textwidth}
+      \begin{figure}
+        \centering
+        \includegraphics[width=0.7\textwidth]{figure_1_14_b.png}
+        \caption{(b)}
+      \end{figure}
+    \end{column}
+  \end{columns}
+\end{frame}
+
+\begin{frame}{Surfaces}
+  \begin{block}{}
+    \begin{itemize}
+    \item But how about (a) and (c)?
+    \item These spaces are homeomorphic, yet no amount of stretching, bending, and twisting will deform one into the other.
+    \item To show two spaces are homeomorphic one must find a continous bijection between them, whose inverse is also continuous.
+    \end{itemize}
+  \end{block}
+  \begin{columns}
+    \begin{column}{0.5\textwidth}
+      \begin{figure}
+        \centering
+        \includegraphics[width=0.7\textwidth]{figure_1_14_a.png}
+        \caption{(a)}
+      \end{figure}
+    \end{column}
+    % Column 2
+    \begin{column}{0.5\textwidth}
+      \begin{figure}
+        \centering
+        \includegraphics[width=0.7\textwidth]{figure_1_14_c.png}
+        \caption{(c)}
+      \end{figure}
+    \end{column}
+  \end{columns}
+\end{frame}
+
+\begin{frame}{Surfaces}
+  \begin{block}{}
+    Let's consider how to construct \textsl{M}.
+    \begin{itemize}
+    \item Buliding a model is easy: begin with a rectangle of paper and identify a pair of opposite edges with a half twist. This gives the usual representation of \textsl{M} as (a).
+    \item To obtain (c) we must add a full twist to the above process.
+    \end{itemize}
+  \end{block}
+  \begin{figure}
+    \centering
+    \includegraphics[width=0.7\textwidth]{figure_1_15.png}
+    \caption{}
+  \end{figure}
+\end{frame}
+
+\begin{frame}{Surfaces}
+  \begin{block}{}
+    \begin{itemize}
+    \item But in terms of the identification of the edges A and B this changes nothing, the same points of A and B are made to coincide. Therefore the spaces (a) and (c) are homeomorphic.
+    \item They are merely different representations of the \textsl{same} space in euclidean space.
+    \item In other words, there is no homeomorphism from euclidean space to itself that throws (a) to (c).
+    \end{itemize}
+  \end{block}
+  \begin{columns}
+    \begin{column}{0.5\textwidth}
+      \begin{figure}
+        \centering
+        \includegraphics[width=0.7\textwidth]{figure_1_14_a.png}
+        \caption{(a)}
+      \end{figure}
+    \end{column}
+    % Column 2
+    \begin{column}{0.5\textwidth}
+      \begin{figure}
+        \centering
+        \includegraphics[width=0.7\textwidth]{figure_1_14_c.png}
+        \caption{(c)}
+      \end{figure}
+    \end{column}
+  \end{columns}
+\end{frame}
+
+\begin{frame}{Surfaces}
+  \begin{block}{}
+    \begin{itemize}
+    \item This suggests very strongly that we need some way of considering our spaces abstractly rather than relying on particular representatives of them in euclidean space.
+    \item In what follows we shall try to translate the notion of a surface into precise mathematical language.
+    \item Involving firstly the definition of an abstract (topological) space, and secondly the recognition of surfaces as those spaces which look locally like the euclidean plane.
+    \end{itemize}
+  \end{block}
+\end{frame}
+
 \section{Abstract spaces}
 \section{A classification theorem}
 
