@@ -338,7 +338,7 @@
       \begin{block}{}
         The proof contains more information:
         \begin{itemize}
-        \item It actually tells us that \textsl{P} is made up of two discs which are identified along their boundaries.
+        \item \textsl{P} is made up of two discs which are identified along their boundaries.
         \item Thicken each of \textsl{T} and $\Gamma$ a little on \textsl{P} to obtain two disjoint discs.
         \item Thickening a tree always gives a disc, thickening a graph with loops will give a space with holes in it.
         \item Enlarge these discs little by little until their boundaries coincide.
@@ -382,7 +382,7 @@
     \begin{column}{0.6\textwidth}
       \begin{block}{}
         \begin{itemize}
-        \item Now remember that the sphere consists of two discs, the north and south hemispheres, sewn along their common boundary the equator.
+        \item The sphere consists of two discs, the north and south hemispheres, sewn along their common boundary the equator.
         \item In other words, the hypotheses of Euler's theorem tell us that \textsl{P} looks in some sense like a rather deformed sphere.
         \end{itemize}
       \end{block}
@@ -445,7 +445,7 @@
     \begin{column}{0.6\textwidth}
       \begin{block}{}
         \begin{itemize}
-        \item The polyhedron that is not convex and does not lend itself to the above argument.
+        \item The polyhedron that is not convex does not lend itself to the above argument.
         \item However, if we think of it as being made of rubber then we can easily imagine how to deform it into an ordinary round sphere.
         \item During the deformation we stretch and bend the polyhedron at will, \textsl{but we never identify distinct points and we never tear it}.
         \end{itemize}
@@ -520,45 +520,6 @@
       \end{figure}
     \end{column}
   \end{columns}
-\end{frame}
-
-\begin{frame}{Topological equivalence}
-  \begin{block}{}
-    We propose to give a specific homeomorphism (i.e., a continuous, one-one, and onto function which has continuous inverse) from space (c) to space (d).
-  \end{block}
-  \begin{columns}
-    \begin{column}{0.5\textwidth}
-      \begin{figure}
-        \centering
-        \includegraphics[width=0.7\textwidth]{figure_1_9_b.png}
-        \caption{(c) $x^2 + y^2 - z^2 = 1$}
-      \end{figure}
-    \end{column}
-    % Column 2
-    \begin{column}{0.5\textwidth}
-      \begin{figure}
-        \centering
-        \includegraphics[width=0.7\textwidth]{figure_1_9_c.png}
-        \caption{(d) $1 < |z| < 3$}
-      \end{figure}
-    \end{column}
-  \end{columns}
-\end{frame}
-
-\begin{frame}{Topological equivalence}
-  \begin{block}{}
-    \begin{itemize}
-    \item A way of defining a homeomorphism from the polyhedron \textsl{P} to the sphere.
-    \item It is possible to produce an argument in the opposite direction and show that if \textsl{P} is topologically equivalent to the sphere then \textsl{P} satisfies hypotheses (a) and (b) of Euler's theorem, and therefore Euler's theorem holds for \textsl{P}.
-    \item So if \textsl{P} and \textsl{Q} are polyhedra which are both homeomorphic to the sphere, and if we call $v - e + f$ the \textsl{Euler number} of a polyhedron, then we know from the above discussion that \textsl{P} and \textsl{Q} have the same Euler number, namely 2.
-    \end{itemize}
-  \end{block}
-\end{frame}
-
-\begin{frame}{Topological equivalence}
-  % Theorem environment
-  \begin{theorem}[(1.2) Topologically equivalent polyhedra have the same Euler number.]
-  \end{theorem}
 \end{frame}
 
 \section{Surfaces}
@@ -772,13 +733,108 @@
   \begin{block}{}
     \begin{itemize}
     \item This suggests very strongly that we need some way of considering our spaces abstractly rather than relying on particular representatives of them in euclidean space.
-    \item In what follows we shall try to translate the notion of a surface into precise mathematical language.
-    \item Involving firstly the definition of an abstract (topological) space, and secondly the recognition of surfaces as those spaces which look locally like the euclidean plane.
     \end{itemize}
   \end{block}
 \end{frame}
 
 \section{Abstract spaces}
+
+\begin{frame}{Abstract spaces}
+  \begin{block}{}
+    Rephrase the classical definition of continuity as: \textsl{f} is continuous if given any x $\in$ $\mathbb{E}^m$ and any neighbourhood \textsl{N} of $f(x)$ in $\mathbb{E}^n$, then $f^{-1}(N)$ is a neighbourhood of x in $\mathbb{E}^n$.
+  \end{block}
+\end{frame}
+
+\begin{frame}{Abstract spaces}
+  \begin{block}{}
+    Inspection of the properties of neighbourhoods of points in a euclidean space leads to the following axioms of a topological space.
+  \end{block}
+\end{frame}
+
+\begin{frame}{Abstract spaces}
+  % Theorem environment
+  \begin{block}{}(1.2) We ask for a set \textsl{X} and for each point \textsl{x} of \textsl{X} a nonempty collection of subsets of \textsl{X}, called neighbourhoods. These neighbourhoods are required to satisfy four axioms:
+    \begin{itemize}
+    \item (a) \textsl{x} lies in each of its neighbourhoods.
+    \item (b) The intersection of two neighbourhoods of \textsl{x} is itself a neighbourhood of \textsl{x}.
+    \item (c) If \textsl{N} is a neighbourhood of \textsl{x} and if \textsl{U} is a subset of \textsl{X} which contains \textsl{N}, then \textsl{U} is a neighbourhood of \textsl{x}.
+    \item (d) If \textsl{N} is a neighbourhood of x and if $\overset{\circ}{N}$ denotes the set {{$z \in N|N$ is a neighbourhood of $z$}}.
+    \end{itemize}
+  \end{block}
+\end{frame}
+
+\begin{frame}{Abstract spaces}
+  \begin{definition}[Surface]
+    (1.3) A surface is a topological space in which each point has a neighbourhood homeomorphic to the plane, and for which any two distinct points possess disjoint neighbourhoods.
+    \begin{itemize}
+    \item The definition fits exactly our intuitive idea of what a surface should be.
+    \item If we stand in it at some point (imagining a giant version of the surface in question) and look at the points very close to our feet we should be able to imagine that we are standing on a plane.
+    \item The surface of the earth is a good example. Unless you belong to the Flat Earth Society you believe it to be (topologically) a sphere, yet locailly it looks distinctly planar.
+    \end{itemize}
+  \end{definition}
+\end{frame}
+
 \section{A classification theorem}
+
+\begin{frame}{A classification theorem}
+  % Theorem environment
+  \begin{theorem}[(1.4) Classification theorem.]
+    Any closed surface is homeomorphic either to:
+    \begin{enumerate}[label={(\alph*)}]
+    \item The sphere.
+    \item The sphere with a finite number (\textsl{n}) of handles added (an orientable surface of genus n).
+    \item The sphere with a finite number of discs removed and replaced by Mobius strips(nonorientable).
+    \end{enumerate}
+    No two of these surfaces are homeomorphic.
+  \end{theorem}
+\end{frame}
+
+\begin{frame}{A classification theorem}
+  \begin{columns}
+    % Column 1
+    \begin{column}{0.6\textwidth}
+      \begin{block}{}
+        An orientable surface of genus n.
+        \begin{itemize}
+        \item If we draw a smooth closed curve on it,
+        \item choose tangent and normal vectors at point (i.e., choose a coordinating system near the point -- often called a local orientation),
+        \item and then push these vectors once round the curve
+        \item we come back to the same system of vectors.
+        \end{itemize}
+      \end{block}
+    \end{column}
+    % Column 2
+    \begin{column}{0.4\textwidth}
+      \begin{figure}
+        \centering
+        \includegraphics[width=0.7\textwidth]{figure_1_19_a.png}
+        \caption{Polyhedron that is not convex}
+      \end{figure}
+    \end{column}
+  \end{columns}
+\end{frame}
+
+\begin{frame}{A classification theorem}
+  \begin{columns}
+    % Column 1
+    \begin{column}{0.6\textwidth}
+      \begin{block}{}
+        Nonorientable
+        \begin{itemize}
+        \item Any surface which contains a Mobius strip cannot satisfy this property.
+        \item When we push tangent and normal vectors once round the central circle of the Mobius strip, the normal vector is reversed.
+        \end{itemize}
+      \end{block}
+    \end{column}
+    % Column 2
+    \begin{column}{0.4\textwidth}
+      \begin{figure}
+        \centering
+        \includegraphics[width=0.7\textwidth]{figure_1_19_b.png}
+        \caption{Polyhedron that is not convex}
+      \end{figure}
+    \end{column}
+  \end{columns}
+\end{frame}
 
 \end{document}
