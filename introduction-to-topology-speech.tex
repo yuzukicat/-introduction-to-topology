@@ -163,286 +163,113 @@
 \section{Topological equivalence}
 
 \begin{frame}{Topological equivalence}
-  \begin{columns}
-    \begin{column}{0.6\textwidth}
-      \begin{block}{}
-        The proof contains more information:
-        \begin{itemize}
-        \item \textsl{P} is made up of two discs which are identified along their boundaries.
-        \item Thicken each of \textsl{T} and $\Gamma$ a little on \textsl{P} to obtain two disjoint discs.
-        \item Thickening a tree always gives a disc, thickening a graph with loops will give a space with holes in it.
-        \item Enlarge these discs little by little until their boundaries coincide.
-        \item The polyhedron \textsl{P} is now made up of two discs which have a common boundary.
-        \end{itemize}
-      \end{block}
-    \end{column}
-    % Column 2
-    \begin{column}{0.4\textwidth}
-      \begin{figure}
-        \centering
-        \includegraphics[width=0.7\textwidth]{figure_1_6.png}
-        \caption{\textsl{T} and $\Gamma$ thickened on \textsl{P}}
-      \end{figure}
-    \end{column}
-  \end{columns}
-\end{frame}
-
-\begin{frame}{Topological equivalence}
-  \begin{columns}
-    \begin{column}{0.6\textwidth}
-      \begin{block}{}
-        \begin{itemize}
-        \item Granted these discs may have a rather odd shape, but they can be deformed into ordinary, round flat discs.
-        \end{itemize}
-      \end{block}
-    \end{column}
-    % Column 2
-    \begin{column}{0.4\textwidth}
-      \begin{figure}
-        \centering
-        \includegraphics[width=0.7\textwidth]{figure_1_7.png}
-        \caption{}
-      \end{figure}
-    \end{column}
-  \end{columns}
-\end{frame}
-
-\begin{frame}{Topological equivalence}
-  \begin{columns}
-    \begin{column}{0.6\textwidth}
-      \begin{block}{}
-        \begin{itemize}
-        \item The sphere consists of two discs, the north and south hemispheres, sewn along their common boundary the equator.
-        \item In other words, the hypotheses of Euler's theorem tell us that \textsl{P} looks in some sense like a rather deformed sphere.
-        \end{itemize}
-      \end{block}
-    \end{column}
-    % Column 2
-    \begin{column}{0.4\textwidth}
-      \begin{figure}
-        \centering
-        \includegraphics[width=0.7\textwidth]{figure_1_7_b.png}
-        \caption{identify boundaries}
-      \end{figure}
-    \end{column}
-  \end{columns}
-\end{frame}
-
-\begin{frame}{Topological equivalence}
-  \begin{columns}
-    \begin{column}{0.6\textwidth}
-      \begin{block}{}
-        For a specific polyhedron it may be very easy to set up a decent correspondence bwtween its points and those of the sphere.
-        \begin{itemize}
-        \item For example, in the case of the regular tetrahedron \textsl{T} we can use radial projection from the centre of gravity $\hat T$ of \textsl{T} to project \textsl{T} onto a sphere with centre $\hat T$.
-        \end{itemize}
-      \end{block}
-    \end{column}
-    % Column 2
-    \begin{column}{0.4\textwidth}
-      \begin{figure}
-        \centering
-        \includegraphics[width=0.7\textwidth]{figure_1_8_a.png}
-        \caption{Radial projection $\pi$}
-      \end{figure}
-    \end{column}
-  \end{columns}
-\end{frame}
-
-\begin{frame}{Topological equivalence}
-  \begin{columns}
-    \begin{column}{0.6\textwidth}
-      \begin{block}{}
-        \begin{itemize}
-        \item The faces of \textsl{T} project to curvilinear triangles on the sphere as shown on the right fig.
-        \end{itemize}
-      \end{block}
-    \end{column}
-    % Column 2
-    \begin{column}{0.4\textwidth}
-      \begin{figure}
-        \centering
-        \includegraphics[width=0.7\textwidth]{figure_1_8_b.png}
-        \caption{Radial projection $\pi$}
-      \end{figure}
-    \end{column}
-  \end{columns}
-\end{frame}
-
-\begin{frame}{Topological equivalence}
-  \begin{columns}
-    % Column 1
-    \begin{column}{0.6\textwidth}
-      \begin{block}{}
-        \begin{itemize}
-        \item The polyhedron that is not convex does not lend itself to the above argument.
-        \item However, if we think of it as being made of rubber then we can easily imagine how to deform it into an ordinary round sphere.
-        \item During the deformation we stretch and bend the polyhedron at will, \textsl{but we never identify distinct points and we never tear it}.
-        \end{itemize}
-      \end{block}
-    \end{column}
-    % Column 2
-    \begin{column}{0.4\textwidth}
-      \begin{figure}
-        \centering
-        \includegraphics[width=0.7\textwidth]{figure_1_8_c.png}
-        \caption{Polyhedron that is not convex}
-      \end{figure}
-    \end{column}
-  \end{columns}
-\end{frame}
-
-\begin{frame}{Topological equivalence}
-  \begin{columns}
-    % Column 1
-    \begin{column}{1.0\textwidth}
-      \begin{block}{}
-        \begin{itemize}
-        \item The resulting correspondence between the points of the given polyhedron and the points of the sphere is an example of \textsl{topological equivalence} or \textsl{homeomorphism}.
-        \item In formal terms it is a one-one and onto continuous function with continuous inverse.
-        \end{itemize}
-      \end{block}
-    \end{column}
-  \end{columns}
+  \begin{block}{}
+    The proof contains much more information than Euler's formular.
+    \begin{itemize}
+    \item With very little extra effort it actually tells us that \textsl{P} is made up of two discs which are identified along their boundaries.
+    \item To see this, simply thicken each of \textsl{T} and $\Gamma$ a little on \textsl{P} to obtain two disjoint discs.
+    \item Thickening a tree always gives a disc, thickening a graph with loops will give a space with holes in it.
+    \item Enlarge these discs little by little until their boundaries coincide.
+    \item The polyhedron \textsl{P} is now made up of two discs which have a common boundary.
+    \end{itemize}
+  \end{block}
 \end{frame}
 
 \begin{frame}{Topological equivalence}
   \begin{block}{}
-    To help make things a little more concrete: Here are four spaces which are homeomorphic.
+    \begin{itemize}
+    \item Granted these discs may have a rather odd shape, but they can be deformed into ordinary, round flat discs.
+    \end{itemize}
   \end{block}
-  \begin{columns}
-    \begin{column}{0.4\textwidth}
-      \begin{figure}
-        \centering
-        \includegraphics[width=0.7\textwidth]{figure_1_9_a.png}
-        \caption{(a) Surface of cylinder finite height, excluding the two circles at the ends}
-      \end{figure}
-    \end{column}
-    % Column 2
-    \begin{column}{0.6\textwidth}
-      \begin{figure}
-        \centering
-        \includegraphics[width=0.7\textwidth]{figure_1_9_d.png}
-        \caption{(b) Sphere with the points at the north and south poles removed}
-      \end{figure}
-    \end{column}
-  \end{columns}
 \end{frame}
 
 \begin{frame}{Topological equivalence}
   \begin{block}{}
-    To help make things a little more concrete: Here are four spaces which are homeomorphic.
+    \begin{itemize}
+    \item Now remember that the sphere consists of two discs, the north and south hemispheres, sewn along their common boundary the equator.
+    \item In other words, the hypotheses of Euler's theorem tell us that \textsl{P} looks in some sense like a rather deformed sphere.
+    \end{itemize}
   \end{block}
-  \begin{columns}
-    \begin{column}{0.5\textwidth}
-      \begin{figure}
-        \centering
-        \includegraphics[width=0.7\textwidth]{figure_1_9_b.png}
-        \caption{(c) One-sheeted hyperboloid given by the equation $x^2 + y^2 - z^2 = 1$}
-      \end{figure}
-    \end{column}
-    % Column 2
-    \begin{column}{0.5\textwidth}
-      \begin{figure}
-        \centering
-        \includegraphics[width=0.7\textwidth]{figure_1_9_c.png}
-        \caption{(d) Open annulus in the complex plane specified by $1 < |z| < 3$}
-      \end{figure}
-    \end{column}
-  \end{columns}
+\end{frame}
+
+\begin{frame}{Topological equivalence}
+  \begin{block}{}
+    Of course, for a specific polyhedron it may be very easy to set up a decent correspondence bwtween its points and those of the sphere.
+    \begin{itemize}
+    \item For example, in the case of the regular tetrahedron \textsl{T} we can use radial projection from the centre of gravity $\hat T$ of \textsl{T} to project \textsl{T} onto a sphere with centre $\hat T$.
+    \end{itemize}
+  \end{block}
+\end{frame}
+
+\begin{frame}{Topological equivalence}
+  \begin{block}{}
+    \begin{itemize}
+    \item The faces of \textsl{T} project to curvilinear triangles on the sphere as shown on the right fig.
+    \end{itemize}
+  \end{block}
+\end{frame}
+
+\begin{frame}{Topological equivalence}
+  \begin{block}{}
+    \begin{itemize}
+    \item The polyhedron that is not convex does not lend itself to the above argument.
+    \item However, if we think of it as being made of rubber then we can easily imagine how to deform it into an ordinary round sphere.
+    \item During the deformation we stretch and bend the polyhedron at will, \textsl{but we never identify distinct points and we never tear it}.
+    \end{itemize}
+  \end{block}
+\end{frame}
+
+\begin{frame}{Topological equivalence}
+  \begin{block}{}
+    \begin{itemize}
+    \item The resulting correspondence between the points of the given polyhedron and the points of the sphere is an example of \textsl{topological equivalence} or \textsl{homeomorphism}.
+    \item In formal terms it is a one-one and onto continuous function with continuous inverse.
+    \end{itemize}
+  \end{block}
+\end{frame}
+
+\begin{frame}{Topological equivalence}
+  \begin{block}{}
+    We shall go carefully into the definition of homeomorphism in our later discussion. But to help make things a little more concrete: at present here are four spaces which are homeomorphic. (a) Surface of cylinder finite height, excluding the two circles at the ends. (b) Sphere with the points at the north and south poles removed.
+  \end{block}
+\end{frame}
+
+\begin{frame}{Topological equivalence}
+  \begin{block}{}
+    (c) One-sheeted hyperboloid given by the equation $x^2 + y^2 - z^2 = 1$. (d) Open annulus in the complex plane specified by $1 < |z| < 3$.
+  \end{block}
 \end{frame}
 
 \section{Surfaces}
 
 \begin{frame}{Surfaces}
   \begin{block}{}
-    Being geometers at heart, we are more interested in bounded configurations which occure natually in euclidean space. For example, the unit circle, the unit disc in the plane, surfaces such as:
+    Being geometers at heart, we are more interested in bounded configurations which occure natually in euclidean space. For example, the unit circle, the unit disc in the plane, surfaces such as: (a) Sphere. (b) Torus.
   \end{block}
-  \begin{columns}
-    \begin{column}{0.5\textwidth}
-      \begin{figure}
-        \centering
-        \includegraphics[width=0.7\textwidth]{figure_1_10_a.png}
-        \caption{(a) Sphere}
-      \end{figure}
-    \end{column}
-    % Column 2
-    \begin{column}{0.5\textwidth}
-      \begin{figure}
-        \centering
-        \includegraphics[width=0.7\textwidth]{figure_1_10_b.png}
-        \caption{(b) Torus}
-      \end{figure}
-    \end{column}
-  \end{columns}
 \end{frame}
 
 \begin{frame}{Surfaces}
   \begin{block}{}
-    All of which live in three-dimensional space.
+    (c) Mobius strip. (d) Cylinder. All of which live in three-dimensional space.
   \end{block}
-  \begin{columns}
-    \begin{column}{0.5\textwidth}
-      \begin{figure}
-        \centering
-        \includegraphics[width=0.7\textwidth]{figure_1_10_c.png}
-        \caption{(c) Mobius strip}
-      \end{figure}
-    \end{column}
-    % Column 2
-    \begin{column}{0.5\textwidth}
-      \begin{figure}
-        \centering
-        \includegraphics[width=0.7\textwidth]{figure_1_10_d.png}
-        \caption{(d) Cylinder}
-      \end{figure}
-    \end{column}
-  \end{columns}
 \end{frame}
 
 \begin{frame}{Surfaces}
   \begin{block}{}
     Klein bottle is difficult to imagine because in any attempt to represent it in three dimensions the Klein bottle must cross itself. In our drawing the surface cuts itself in a small circle.
   \end{block}
-  \begin{columns}
-    \begin{column}{0.5\textwidth}
-      \begin{figure}
-        \centering
-        \includegraphics[width=0.7\textwidth]{figure_1_10_e.png}
-        \caption{(e) Klein bottle}
-      \end{figure}
-    \end{column}
-    % Column 2
-    \begin{column}{0.5\textwidth}
-      \begin{figure}
-        \centering
-        \includegraphics[width=0.7\textwidth]{figure_1_10_f.png}
-        \caption{(f) Punctured double torus}
-      \end{figure}
-    \end{column}
-  \end{columns}
 \end{frame}
 
 \begin{frame}{Surfaces}
   \begin{block}{}
-    To build a Klein bottle, the first half of the construction, that is as far as cylinder, is the same.
+    We can understand the Klein bottle a little better by trying to make a model of it. Consider the usual method of modelling a torus. One begins with a rectangle of paper and identifies the edges as the fig. To build a Klein bottle, the first half of the construction, that is as far as cylinder, is the same.
   \end{block}
-  \begin{figure}
-    \centering
-    \includegraphics[width=0.7\textwidth]{figure_1_11.png}
-    \caption{}
-  \end{figure}
 \end{frame}
 
 \begin{frame}{Surfaces}
   \begin{block}{}
     But then the ends of the cylinder are identified in the opposite direction. In order to do this, the cylinder has to be bent around and one end pushed through the side as in the Fig.
   \end{block}
-  \begin{figure}
-    \centering
-    \includegraphics[width=0.7\textwidth]{figure_1_12.png}
-    \caption{}
-  \end{figure}
 \end{frame}
 
 \begin{frame}{Surfaces}
@@ -454,11 +281,6 @@
     \item Lift one pipe a little clear of the other into the fourth dimension.
     \end{itemize}
   \end{block}
-  \begin{figure}
-    \centering
-    \includegraphics[width=0.7\textwidth]{figure_1_13.png}
-    \caption{}
-  \end{figure}
 \end{frame}
 
 \begin{frame}{Surfaces}
@@ -471,23 +293,6 @@
   \begin{block}{}
     Three copies of the Mobius strip \textsl{M}. (a) and (b) are homeomorphic is no surprise, one only has to take a rubber version of (a) and stretch it into the (b)
   \end{block}
-  \begin{columns}
-    \begin{column}{0.5\textwidth}
-      \begin{figure}
-        \centering
-        \includegraphics[width=0.7\textwidth]{figure_1_14_a.png}
-        \caption{(a)}
-      \end{figure}
-    \end{column}
-    % Column 2
-    \begin{column}{0.5\textwidth}
-      \begin{figure}
-        \centering
-        \includegraphics[width=0.7\textwidth]{figure_1_14_b.png}
-        \caption{(b)}
-      \end{figure}
-    \end{column}
-  \end{columns}
 \end{frame}
 
 \begin{frame}{Surfaces}
@@ -498,23 +303,6 @@
     \item To show two spaces are homeomorphic one must find a continous bijection between them, whose inverse is also continuous.
     \end{itemize}
   \end{block}
-  \begin{columns}
-    \begin{column}{0.5\textwidth}
-      \begin{figure}
-        \centering
-        \includegraphics[width=0.7\textwidth]{figure_1_14_a.png}
-        \caption{(a)}
-      \end{figure}
-    \end{column}
-    % Column 2
-    \begin{column}{0.5\textwidth}
-      \begin{figure}
-        \centering
-        \includegraphics[width=0.7\textwidth]{figure_1_14_c.png}
-        \caption{(c)}
-      \end{figure}
-    \end{column}
-  \end{columns}
 \end{frame}
 
 \begin{frame}{Surfaces}
@@ -522,14 +310,9 @@
     Let's consider how to construct \textsl{M}.
     \begin{itemize}
     \item Buliding a model is easy: begin with a rectangle of paper and identify a pair of opposite edges with a half twist. This gives the usual representation of \textsl{M} as (a).
-    \item To obtain (c) we must add a full twist to the above process.
+    \item To obtain (c) we must add a full twist to the above process,i.e., identify the edges of our strip after twisting one and one-half times.
     \end{itemize}
   \end{block}
-  \begin{figure}
-    \centering
-    \includegraphics[width=0.7\textwidth]{figure_1_15.png}
-    \caption{}
-  \end{figure}
 \end{frame}
 
 \begin{frame}{Surfaces}
@@ -537,32 +320,15 @@
     \begin{itemize}
     \item But in terms of the identification of the edges A and B this changes nothing, the same points of A and B are made to coincide. Therefore the spaces (a) and (c) are homeomorphic.
     \item They are merely different representations of the \textsl{same} space in euclidean space.
-    \item In other words, there is no homeomorphism from yeuclidean space to itself that throws (a) to (c).
+    \item The representations are different in the sense that although we can find a homeomorphism between them, there is no way of extending such a homeomorphism over all the points of euclidean space. In other words, there is no homeomorphism from euclidean space to itself that throws (a) to (c).
     \end{itemize}
   \end{block}
-  \begin{columns}
-s    \begin{column}{0.5\textwidth}
-      \begin{figure}
-        \centering
-        \includegraphics[width=0.7\textwidth]{figure_1_14_a.png}
-        \caption{(a)}
-      \end{figure}
-    \end{column}
-    % Column 2
-    \begin{column}{0.5\textwidth}
-      \begin{figure}
-        \centering
-        \includegraphics[width=0.7\textwidth]{figure_1_14_c.png}
-        \caption{(c)}
-      \end{figure}
-    \end{column}
-  \end{columns}
 \end{frame}
 
 \begin{frame}{Surfaces}
   \begin{block}{}
     \begin{itemize}
-    \item This suggests very strongly that we need some way of considering our spaces abstractly rather than relying on particular representatives of them in euclidean space.
+    \item If our intuition can be led astray by pictures as these figs, this suggests very strongly that we need some way of considering our spaces abstractly rather than relying on particular representatives of them in euclidean space.
     \end{itemize}
   \end{block}
 \end{frame}
