@@ -61,7 +61,7 @@
     In order to find a counterexample we need to be a little more ingenious.
   \end{block}
   \begin{block}{}
-    If we do our calculation for the polyhedra shown in the rigth fig, we obtain v - e + f = 4.
+    If we do our calculation for the polyhedra shown in the right fig, we obtain v - e + f = 4.
   \end{block}
   \begin{block}{}
     We seem to have cheated a little by constructing a polyhedron whose surface consists of two distinct pieces. In technical language its surface is not connected.
@@ -85,7 +85,7 @@
 
 \begin{frame}{Euler's theorem}
   \begin{block}{}
-    Before processing any further, we need to be a little more precise. In our discussion so far we have only made use of the surfaces of solids (except, that is, when we mentioned convexity). So let's agree to use the word polyhedron for such a surface, rather than for the solid which it bounds. A \textsl{polyhedron} is therefore a finite collection of plane polygons which fit together nicely in the rigth sense:
+    Before processing any further, we need to be a little more precise. In our discussion so far we have only made use of the surfaces of solids (except, that is, when we mentioned convexity). So let's agree to use the word polyhedron for such a surface, rather than for the solid which it bounds. A \textsl{polyhedron} is therefore a finite collection of plane polygons which fit together nicely in the right sense:
   \end{block}
   \begin{block}{}
     If two polygons meet they do so in a common edge, and each edge of a polygon lies in precisely one other polygon. In addition, we ask that if we consider the polygons which contain a particular vertex, then we can label them $Q_1$, $Q_2$,....,$Q_k$ in such a way that $Q_i$ has an edge in common with $Q_{i+1}$ for $1 \leq i < k$, and $Q_k$ has an edge in common with $Q_1$. In other words, the polygons fit together to form a piece of surface around the given vertex (The number \textsl{k} may vary from one vertex to another). The last condition rules out, for example, two cubes joined together at a single vertex.
@@ -309,7 +309,7 @@
   \begin{block}{}
     Let's consider how to construct \textsl{M}.
     \begin{itemize}
-    \item Buliding a model is easy: begin with a rectangle of paper and identify a pair of opposite edges with a half twist. This gives the usual representation of \textsl{M} as (a).
+    \item Building a model is easy: begin with a rectangle of paper and identify a pair of opposite edges with a half twist. This gives the usual representation of \textsl{M} as (a).
     \item To obtain (c) we must add a full twist to the above process,i.e., identify the edges of our strip after twisting one and one-half times.
     \end{itemize}
   \end{block}
@@ -373,7 +373,7 @@
   \begin{definition}[Surface]
     \begin{itemize}
     \item If we stand in it at some point (imagining a giant version of the surface in question) and look at the points very close to our feet we should be able to imagine that we are standing on a plane.
-    \item The surface of the earth is a good example. Unless you belong to the Flat Earth Society you believe it to be (topologically) a sphere, yet locailly it looks distinctly planar.
+    \item The surface of the earth is a good example. Unless you belong to the Flat Earth Society you believe it to be (topologically) a sphere, yet locally it looks distinctly planar.
     \end{itemize}
   \end{definition}
 \end{frame}
@@ -413,38 +413,28 @@
 \section{A classification theorem}
 
 \begin{frame}{A classification theorem}
-  \begin{columns}
-    % Column 1
-    \begin{column}{0.6\textwidth}
-      \begin{block}{}
-        We construct examples of closed surfaces as follows:
-        \begin{itemize}
-        \item Take the ordinary sphere, remove two disjoint discs,
-        \item and then add on a cylinder by identifying its two boundary circles with the boundaries of the holes in the sphere.
-          This process is called 'adding a handle' to the sphere.
-        \end{itemize}
-      \end{block}
-    \end{column}
-    % Column 2
-    \begin{column}{0.4\textwidth}
-      \begin{figure}
-        \centering
-        \includegraphics[width=0.7\textwidth]{figure_1_17.png}
-        \caption{Sphere with one handle}
-      \end{figure}
-    \end{column}
-  \end{columns}
+  \begin{block}{}
+    The remarkable thing is that if we agree to work only with these so-called 'closed' surfaces (have no boundary, be in some sense closed up on themselves, be connected. In other words, compact, connected), we can classify them. Means giving an arbitrary closed surface it is homeomorphic to one on the classfication list.
+    We can construct examples of closed surfaces as follows:
+    \begin{itemize}
+    \item Take the ordinary sphere, remove two disjoint discs,
+    \item and then add on a cylinder by identifying its two boundary circles with the boundaries of the holes in the sphere.
+      This process is called 'adding a handle' to the sphere.
+    \end{itemize}
+    You should be able to convince yourself that a sphere with one handle is nothing more than the torus.
+  \end{block}
 \end{frame}
 
 \begin{frame}{A classification theorem}
   \begin{block}{}
-    Projective Plane:
+    The others are unfortunately like the Klein bottle in the sense that they do not admit representatives in euclidean three-dimensional space and therefore more difficult to imagine. Luckily, the constructive of models for these surfaces is an easy process to describe.
     \begin{itemize}
     \item Begin with the sphere, remove a single disc, and added a Mobius strip in its place.
     \item The Mobius strip has after all a single circle as boundary, and all that we are asking is that the points of this boundary circle be identified with those of the boundary circle of the hole in the sphere.
     \item One must imagine this identification taking place in some space where there is plenty of room (euclidean four-dimensional space will do).
     \end{itemize}
   \end{block}
+  The resulting closed surface is called the projective plane.
 \end{frame}
 
 \begin{frame}{A classification theorem}
@@ -461,51 +451,24 @@
 \end{frame}
 
 \begin{frame}{A classification theorem}
-  \begin{columns}
-    % Column 1
-    \begin{column}{0.6\textwidth}
-      \begin{block}{}
-        An orientable surface of genus n.
-        \begin{itemize}
-        \item If we draw a smooth closed curve on it,
-        \item choose tangent and normal vectors at point (i.e., choose a coordinating system near the point -- often called a local orientation),
-        \item and then push these vectors once round the curve
-        \item we come back to the same system of vectors.
-        \end{itemize}
-      \end{block}
-    \end{column}
-    % Column 2
-    \begin{column}{0.4\textwidth}
-      \begin{figure}
-        \centering
-        \includegraphics[width=0.7\textwidth]{figure_1_19_a.png}
-        \caption{}
-      \end{figure}
-    \end{column}
-  \end{columns}
+  \begin{block}{}
+    The sphere with n handles added is called an orientable surface of genus n. We call it orientable for the following reason.
+    \begin{itemize}
+    \item If we draw a smooth closed curve on it,
+    \item choose tangent and normal vectors at point (i.e., choose a coordinating system near the point -- often called a local orientation),
+    \item and then push these vectors once round the curve
+    \item we come back to the same system of vectors.
+    \end{itemize}
+  \end{block}
 \end{frame}
 
 \begin{frame}{A classification theorem}
-  \begin{columns}
-    % Column 1
-    \begin{column}{0.6\textwidth}
-      \begin{block}{}
-        Nonorientable
-        \begin{itemize}
-        \item Any surface which contains a Mobius strip cannot satisfy this property.
-        \item When we push tangent and normal vectors once round the central circle of the Mobius strip, the normal vector is reversed.
-        \end{itemize}
-      \end{block}
-    \end{column}
-    % Column 2
-    \begin{column}{0.4\textwidth}
-      \begin{figure}
-        \centering
-        \includegraphics[width=0.7\textwidth]{figure_1_19_b.png}
-        \caption{}
-      \end{figure}
-    \end{column}
-  \end{columns}
+  \begin{block}{}
+    \begin{itemize}
+    \item Any surface which contains a Mobius strip cannot satisfy this property and is consequently called nonorientable.
+    \item The fig shows what happens when we push the tangent and normal vectors once round the central circle of the Mobius strip, the normal vector is reversed.
+    \end{itemize}
+  \end{block}
 \end{frame}
 
 % Insert a thank your frame ------------------------------------------------
